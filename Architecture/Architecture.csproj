@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Departments.cs" />
+    <Compile Include="HumanR.cs" />
+    <Compile Include="IT.cs" />
+    <Compile Include="Marketing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

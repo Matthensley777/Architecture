@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Architecture
 {
-    class Departments
+    class Sales
     {
     }
 }
