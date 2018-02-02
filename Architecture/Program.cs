@@ -48,7 +48,7 @@ namespace Architecture
                 makingPlan = false
             };
 
-            var department = new List<>
+            var departments = new List<DepartmentBase>
             {
                 Marketing,
                 IT,
@@ -61,6 +61,7 @@ namespace Architecture
             {
                 department.PeopleHired(4);
                 department.PeopleFired(6);
+                break;
             }
 
 

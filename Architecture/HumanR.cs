@@ -17,12 +17,12 @@ namespace Architecture
     public override void PeopleHired(int Hired)
     {
         Hire += Hired;
-        Console.WriteLine($"");
+        Console.WriteLine($"{Hire}");
     }
      
     public override void PeopleFired (int Fired)
     {
         Fire += Fired;
-        Console.WriteLine($"");
+        Console.WriteLine($"{Fire}");
     }
 }
