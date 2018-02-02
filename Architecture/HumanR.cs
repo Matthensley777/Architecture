@@ -6,14 +6,23 @@ using System.Threading.Tasks;
 
 namespace Architecture
 {
-    class HumanR
+    class HumanR : DepartmentBase
     {
-        public string name { get; set; }
-        public string supervisor { get; set; }
-        public string payroll { get; set }
-        public int employeeCount { get; set; }
-        public int numberOfOpenOccurances { get; set }
+        public string payroll { get; set; }
+        public int numberOfOpenOccurances { get; set; }
+        public int Hire { get; set; }
+        public int Fire { get; set; }
+    }
 
-
+    public override void PeopleHired(int Hired)
+    {
+        Hire += Hired;
+        Console.WriteLine($"");
+    }
+     
+    public override void PeopleFired (int Fired)
+    {
+        Fire += Fired;
+        Console.WriteLine($"");
     }
 }

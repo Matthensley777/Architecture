@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Architecture
 {
-    class Departments
+    class DepartmentBase
     {
-        public string Department { get; set; }
-        private string _name;
-        private string _supervisor;
-        private int _employeeCount;
+        public string name { get; set; }
+        public string supervisor { get; set; }
+        public int employeeCount { get; set; }
     }
   
 }

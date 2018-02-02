@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Architecture
 {
-    class IT
+    class IT : DepartmentBase
     {
-        public string name { get; set; }
-        public string supervisor { get; set; }
-        public int EmployeeCount { get; set; }
         public int NumberOfComputers { get; set; }
         public int NumberOfCases { get; set; }
 

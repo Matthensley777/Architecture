@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Architecture
 {
-    class Sales
+    class Sales : DepartmentBase
     {
+        public bool makingPlan { get; set; }
     }
+
+
 }

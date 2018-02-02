@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Architecture
 {
-    class Marketing
+    class Marketing : DepartmentBase
     {
-        public string name { get; set; }
-        public string supervisor { get; set; }
-        public int employeeCount { get; set; }
         public int budget { get; set; }
         public int numberOfAdCampaigns { get; set; }
     }

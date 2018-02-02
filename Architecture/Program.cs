@@ -17,7 +17,9 @@ namespace Architecture
                 supervisor = "John Doe",
                 payroll = "behind",
                 employeeCount = 6,
-                numberOfOpenOccurances = 89
+                numberOfOpenOccurances = 89,
+                Hire = 6,
+                Fire = 4
             };
 
             var Marketing = new Marketing
@@ -33,7 +35,7 @@ namespace Architecture
             {
                 name = "IT",
                 supervisor = "Boss",
-                EmployeeCount = 1,
+                employeeCount = 1,
                 NumberOfComputers = 15,
                 NumberOfCases = 5
             };
