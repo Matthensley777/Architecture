@@ -48,7 +48,22 @@ namespace Architecture
                 makingPlan = false
             };
 
-            var myDictionary = new Dictionary<string, string>();
+            var department = new List<>
+            {
+                Marketing,
+                IT,
+                HumanResources,
+                sales,
+
+            };
+
+            foreach ( department in departments )
+            {
+                department.PeopleHired(4);
+                department.PeopleFired(6);
+            }
+
+
 
         }
     }
