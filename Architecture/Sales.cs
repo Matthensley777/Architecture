@@ -8,7 +8,12 @@ namespace Architecture
 {
     class Sales : DepartmentBase
     {
-        public bool makingPlan { get; set; }
+        public int makingPlan { get; set; }
+
+        public void SalesPlan(int Plan)
+        {
+            makingPlan += Plan;
+        }
     }
 
 

@@ -12,18 +12,25 @@ namespace Architecture
         public int numberOfOpenOccurances { get; set; }
         public int Hire { get; set; }
         public int Fire { get; set; }
+        public int employees { get; set; }
 
-        //override overrides default functionality from a base class
+        
         public void PeopleHired(int Hired)
         {
             Hire += Hired;
-            Console.WriteLine($"{Hire}");
+            
         }
 
         public void PeopleFired(int Fired)
         {
             Fire += Fired;
-            Console.WriteLine($"{Fire}");
+            
+        }
+
+        //override overrides default functionality from a base class
+        public override void employeeCount(int Employees)
+        {
+            employees += Employees + 8;
         }
     }
 

@@ -27,8 +27,8 @@ namespace Architecture
                 name = "Marketing",
                 supervisor = "Jane Doe",
                 employeeCount = 8,
-                budget = 1000,
-                numberOfAdCampaigns = 3
+                Budget = 1000,
+                NumberOfAdCampaigns = 3
             };
 
             var IT = new IT
@@ -37,7 +37,9 @@ namespace Architecture
                 supervisor = "Boss",
                 employeeCount = 1,
                 NumberOfComputers = 15,
-                NumberOfCases = 5
+                NumberOfCases = 5,
+                Broke = 7,
+                Fix = 1
             };
 
             var sales = new Sales
@@ -45,7 +47,7 @@ namespace Architecture
                 name = "Sales",
                 supervisor = "Samwise",
                 employeeCount = 25,
-                makingPlan = false
+                makingPlan = 1
             };
 
             var departments = new List<DepartmentBase>
@@ -67,6 +69,34 @@ namespace Architecture
                 break;
             }
 
+            foreach (DepartmentBase department in departments)
+            {
+                if (department is IT ITDepartment)
+                {
+                    ITDepartment.ComputersBroken(7);
+                    ITDepartment.ComputersFixed(1);
+                }
+                break;
+            }
+
+            foreach (DepartmentBase department in departments)
+            {
+                if (department is Marketing MarketingDepartment)
+                {
+                    MarketingDepartment.MarketingBudget(700);
+                    MarketingDepartment.Ads(3);
+                }
+                break;
+            }
+
+            foreach (DepartmentBase department in departments)
+            {
+                if (department is Sales SalesDepartment)
+                {
+                    SalesDepartment.SalesPlan(500000);
+                }
+                break;
+            }
 
 
         }

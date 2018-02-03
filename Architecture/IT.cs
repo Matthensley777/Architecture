@@ -10,6 +10,20 @@ namespace Architecture
     {
         public int NumberOfComputers { get; set; }
         public int NumberOfCases { get; set; }
+        public int Broke { get; set; }
+        public int Fix { get; set; }
+
+        public void ComputersBroken(int Broken)
+        {
+            Broke += Broken;
+            
+        }
+
+        public void ComputersFixed(int Fixed)
+        {
+            Fix += Fixed;
+            
+        }
 
     }
 }

@@ -8,7 +8,18 @@ namespace Architecture
 {
     class Marketing : DepartmentBase
     {
-        public int budget { get; set; }
-        public int numberOfAdCampaigns { get; set; }
+        public int Budget { get; set; }
+        public int NumberOfAdCampaigns { get; set; }
+
+        public void MarketingBudget(int MarketingBudgets)
+        {
+            Budget += MarketingBudgets;
+
+        }
+
+        public void Ads ( int NumberOfAdds )
+        {
+            NumberOfAdCampaigns += NumberOfAdds;
+        }
     }
 }
