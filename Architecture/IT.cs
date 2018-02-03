@@ -25,5 +25,12 @@ namespace Architecture
             
         }
 
+        public override double setBudget(double standardBudget)
+        {
+            //standardBudget = standardBudget + 10000.00;
+            standardBudget += 1000.00;
+            return base.setBudget(standardBudget);
+        }
+
     }
 }

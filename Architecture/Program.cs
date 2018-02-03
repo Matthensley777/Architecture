@@ -16,7 +16,6 @@ namespace Architecture
                 name = "humanResouces",
                 supervisor = "John Doe",
                 payroll = "behind",
-                employeeCount = 6,
                 numberOfOpenOccurances = 89,
                 Hire = 6,
                 Fire = 4
@@ -26,7 +25,6 @@ namespace Architecture
             {
                 name = "Marketing",
                 supervisor = "Jane Doe",
-                employeeCount = 8,
                 Budget = 1000,
                 NumberOfAdCampaigns = 3
             };
@@ -35,7 +33,6 @@ namespace Architecture
             {
                 name = "IT",
                 supervisor = "Boss",
-                employeeCount = 1,
                 NumberOfComputers = 15,
                 NumberOfCases = 5,
                 Broke = 7,
@@ -46,7 +43,6 @@ namespace Architecture
             {
                 name = "Sales",
                 supervisor = "Samwise",
-                employeeCount = 25,
                 makingPlan = 1
             };
 
@@ -96,6 +92,11 @@ namespace Architecture
                     SalesDepartment.SalesPlan(500000);
                 }
                 break;
+            }
+
+            foreach (DepartmentBase department in departments)
+            {
+                department.SetEmployeeCount(8);
             }
 
 

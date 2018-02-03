@@ -28,9 +28,10 @@ namespace Architecture
         }
 
         //override overrides default functionality from a base class
-        public override void employeeCount(int Employees)
+        public override void SetEmployeeCount(int Employees)
         {
-            employees += Employees + 8;
+            employees += Employees;
+            base.SetEmployeeCount(Employees);
         }
     }
 
