@@ -57,10 +57,13 @@ namespace Architecture
 
             };
 
-            foreach ( department in departments )
+            foreach ( DepartmentBase department in departments )
             {
-                department.PeopleHired(4);
-                department.PeopleFired(6);
+                if (department is HumanR humanResourcesDepartment)
+                {
+                    humanResourcesDepartment.PeopleHired(4);
+                    humanResourcesDepartment.PeopleFired(6);
+                }
                 break;
             }
 
